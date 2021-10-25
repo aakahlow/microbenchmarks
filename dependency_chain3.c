@@ -51,45 +51,45 @@ int main (int argc, char *argv[]) {
     asm volatile ("nop");
 
     for (i=0; i<repetitions; i++) {
-        asm volatile("add %0, %0" : "=r" (count0) : "0" (count0) : );
-        asm volatile("add %0, %0" : "=r" (count1) : "0" (count1) : );
-        asm volatile("add %0, %0" : "=r" (count2) : "0" (count2) : );
+        asm volatile("add %0, %1, %2" : "=r" (count0) : "r" (count0), "r" (count0));
+        asm volatile("add %0, %1, %2" : "=r" (count1) : "r" (count1), "r" (count1));
+        asm volatile("add %0, %1, %2" : "=r" (count2) : "r" (count2), "r" (count2));
 
-        asm volatile("add %0, %0" : "=r" (count0) : "0" (count0) : );
-        asm volatile("add %0, %0" : "=r" (count1) : "0" (count1) : );
-        asm volatile("add %0, %0" : "=r" (count2) : "0" (count2) : );
+        asm volatile("add %0, %1, %2" : "=r" (count0) : "r" (count0), "r" (count0));
+        asm volatile("add %0, %1, %2" : "=r" (count1) : "r" (count1), "r" (count1));
+        asm volatile("add %0, %1, %2" : "=r" (count2) : "r" (count2), "r" (count2));
 
-        asm volatile("add %0, %0" : "=r" (count0) : "0" (count0) : );
-        asm volatile("add %0, %0" : "=r" (count1) : "0" (count1) : );
-        asm volatile("add %0, %0" : "=r" (count2) : "0" (count2) : );
+        asm volatile("add %0, %1, %2" : "=r" (count0) : "r" (count0), "r" (count0));
+        asm volatile("add %0, %1, %2" : "=r" (count1) : "r" (count1), "r" (count1));
+        asm volatile("add %0, %1, %2" : "=r" (count2) : "r" (count2), "r" (count2));
 
-        asm volatile("add %0, %0" : "=r" (count0) : "0" (count0) : );
-        asm volatile("add %0, %0" : "=r" (count1) : "0" (count1) : );
-        asm volatile("add %0, %0" : "=r" (count2) : "0" (count2) : );
+        asm volatile("add %0, %1, %2" : "=r" (count0) : "r" (count0), "r" (count0));
+        asm volatile("add %0, %1, %2" : "=r" (count1) : "r" (count1), "r" (count1));
+        asm volatile("add %0, %1, %2" : "=r" (count2) : "r" (count2), "r" (count2));
 
-        asm volatile("add %0, %0" : "=r" (count0) : "0" (count0) : );
-        asm volatile("add %0, %0" : "=r" (count1) : "0" (count1) : );
-        asm volatile("add %0, %0" : "=r" (count2) : "0" (count2) : );
+        asm volatile("add %0, %1, %2" : "=r" (count0) : "r" (count0), "r" (count0));
+        asm volatile("add %0, %1, %2" : "=r" (count1) : "r" (count1), "r" (count1));
+        asm volatile("add %0, %1, %2" : "=r" (count2) : "r" (count2), "r" (count2));
 
-        asm volatile("add %0, %0" : "=r" (count0) : "0" (count0) : );
-        asm volatile("add %0, %0" : "=r" (count1) : "0" (count1) : );
-        asm volatile("add %0, %0" : "=r" (count2) : "0" (count2) : );
+        asm volatile("add %0, %1, %2" : "=r" (count0) : "r" (count0), "r" (count0));
+        asm volatile("add %0, %1, %2" : "=r" (count1) : "r" (count1), "r" (count1));
+        asm volatile("add %0, %1, %2" : "=r" (count2) : "r" (count2), "r" (count2));
 
-        asm volatile("add %0, %0" : "=r" (count0) : "0" (count0) : );
-        asm volatile("add %0, %0" : "=r" (count1) : "0" (count1) : );
-        asm volatile("add %0, %0" : "=r" (count2) : "0" (count2) : );
+        asm volatile("add %0, %1, %2" : "=r" (count0) : "r" (count0), "r" (count0));
+        asm volatile("add %0, %1, %2" : "=r" (count1) : "r" (count1), "r" (count1));
+        asm volatile("add %0, %1, %2" : "=r" (count2) : "r" (count2), "r" (count2));
 
-        asm volatile("add %0, %0" : "=r" (count0) : "0" (count0) : );
-        asm volatile("add %0, %0" : "=r" (count1) : "0" (count1) : );
-        asm volatile("add %0, %0" : "=r" (count2) : "0" (count2) : );
+        asm volatile("add %0, %1, %2" : "=r" (count0) : "r" (count0), "r" (count0));
+        asm volatile("add %0, %1, %2" : "=r" (count1) : "r" (count1), "r" (count1));
+        asm volatile("add %0, %1, %2" : "=r" (count2) : "r" (count2), "r" (count2));
 
-        asm volatile("add %0, %0" : "=r" (count0) : "0" (count0) : );
-        asm volatile("add %0, %0" : "=r" (count1) : "0" (count1) : );
-        asm volatile("add %0, %0" : "=r" (count2) : "0" (count2) : );
+        asm volatile("add %0, %1, %2" : "=r" (count0) : "r" (count0), "r" (count0));
+        asm volatile("add %0, %1, %2" : "=r" (count1) : "r" (count1), "r" (count1));
+        asm volatile("add %0, %1, %2" : "=r" (count2) : "r" (count2), "r" (count2));
 
-        asm volatile("add %0, %0" : "=r" (count0) : "0" (count0) : );
-        asm volatile("add %0, %0" : "=r" (count1) : "0" (count1) : );
-        asm volatile("add %0, %0" : "=r" (count2) : "0" (count2) : );
+        asm volatile("add %0, %1, %2" : "=r" (count0) : "r" (count0), "r" (count0));
+        asm volatile("add %0, %1, %2" : "=r" (count1) : "r" (count1), "r" (count1));
+        asm volatile("add %0, %1, %2" : "=r" (count2) : "r" (count2), "r" (count2));
     }
 
     asm volatile ("nop");

@@ -60,29 +60,29 @@ int main (int argc, char *argv[]) {
         bit  = ~((lfsr >> 0) ^ (lfsr >> 10) ^ (lfsr >> 11) ^ (lfsr >> 30) ) & 1;
         lfsr =  (lfsr >> 1) | (bit << 31);
         jump = lfsr & 1;
-        if (jump)   asm volatile("mov %0, %0" : "=r" (bit) : "r" (bit) : );
-        else        asm volatile("mov %0, %0" : "=r" (lfsr) : "r" (lfsr) : );
+        if (jump)   asm volatile("add %0, %1, %2" : "=r" (bit) : "r" (bit), "r" (0));
+        else        asm volatile("add %0, %1, %2" : "=r" (lfsr) : "r" (lfsr), "r" (0));
 
         /// Linear Feedback Shift Register
         bit  = ~((lfsr >> 0) ^ (lfsr >> 10) ^ (lfsr >> 11) ^ (lfsr >> 30) ) & 1;
         lfsr =  (lfsr >> 1) | (bit << 31);
         jump = lfsr & 1;
-        if (jump)   asm volatile("mov %0, %0" : "=r" (bit) : "r" (bit) : );
-        else        asm volatile("mov %0, %0" : "=r" (lfsr) : "r" (lfsr) : );
+        if (jump)   asm volatile("add %0, %1, %2" : "=r" (bit) : "r" (bit), "r" (0));
+        else        asm volatile("add %0, %1, %2" : "=r" (lfsr) : "r" (lfsr), "r" (0));
 
         /// Linear Feedback Shift Register
         bit  = ~((lfsr >> 0) ^ (lfsr >> 10) ^ (lfsr >> 11) ^ (lfsr >> 30) ) & 1;
         lfsr =  (lfsr >> 1) | (bit << 31);
         jump = lfsr & 1;
-        if (jump)   asm volatile("mov %0, %0" : "=r" (bit) : "r" (bit) : );
-        else        asm volatile("mov %0, %0" : "=r" (lfsr) : "r" (lfsr) : );
+        if (jump)   asm volatile("add %0, %1, %2" : "=r" (bit) : "r" (bit), "r" (0));
+        else        asm volatile("add %0, %1, %2" : "=r" (lfsr) : "r" (lfsr), "r" (0));
 
         /// Linear Feedback Shift Register
         bit  = ~((lfsr >> 0) ^ (lfsr >> 10) ^ (lfsr >> 11) ^ (lfsr >> 30) ) & 1;
         lfsr =  (lfsr >> 1) | (bit << 31);
         jump = lfsr & 1;
-        if (jump)   asm volatile("mov %0, %0" : "=r" (bit) : "r" (bit) : );
-        else        asm volatile("mov %0, %0" : "=r" (lfsr) : "r" (lfsr) : );
+        if (jump)   asm volatile("add %0, %1, %2" : "=r" (bit) : "r" (bit), "r" (0));
+        else        asm volatile("add %0, %1, %2" : "=r" (lfsr) : "r" (lfsr), "r" (0));
 
     }
 
